@@ -22,6 +22,16 @@ public class Compte {
         return this.numero;
     }
 
+    public void setSolde(float s){
+        this.solde = s;
+    }
+
+    public void credit(float s){
+        float newSolde = this.solde + s;
+        this.setSolde(newSolde);
+    }
+
+
     @Override
     public String toString() {
         return "Compte " + numero + " - " +

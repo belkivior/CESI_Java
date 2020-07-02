@@ -24,8 +24,8 @@ public class Compte {
 
     @Override
     public String toString() {
-        return "Compte{" +
-                "client=" + client.getNom() +
-                '}';
+        return "Compte " + numero + " - " +
+                "client " + client.getNom() + " - " +
+                "solde " +solde;
     }
 }

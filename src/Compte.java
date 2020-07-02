@@ -22,8 +22,10 @@ public class Compte {
         return this.numero;
     }
 
-    public void toString(){
-        System.out.println("Client du compte " + numero + " est " + client.getNom());
+    @Override
+    public String toString() {
+        return "Compte{" +
+                "client=" + client.getNom() +
+                '}';
     }
-
 }

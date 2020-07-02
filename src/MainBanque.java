@@ -9,8 +9,8 @@ public class MainBanque {
         dupond.setNom("Pichon");
         System.out.println(dupond.toString());
 
-        Compte com1 = new Compte(10,c1);
-        Compte com2 = new Compte(20,c2);
+        Compte com1 = new Compte(10,martin);
+        Compte com2 = new Compte(20,dupond);
         System.out.println(com1);
         System.out.println(com2);
     }

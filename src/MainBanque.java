@@ -2,16 +2,15 @@ public class MainBanque {
 
     public static void main( String [] argv ) {
         /**/
-        Client martin = new Client(1,"Martin");
-        Client dupond = new Client(2,"Dupond");
-        System.out.println(martin.toString());
-        System.out.println(dupond.toString());
-        dupond.setNom("Pichon");
-        System.out.println(dupond.toString());
+        Client c1 = new Client(1,"Martin");
+        System.out.println(c1);
+        Compte com1 = new Compte(10,c1);
+        Compte com2 = new Compte(20,c1);
+        c1.addCompte(com1);
+        c1.addCompte(com2);
+        System.out.println(c1);
 
-        Compte com1 = new Compte(10,martin);
-        Compte com2 = new Compte(20,dupond);
-        System.out.println(com1);
-        System.out.println(com2);
+        com1.credit((float) 500.0);
+        System.out.println(c1);
     }
 }

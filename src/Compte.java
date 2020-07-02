@@ -26,8 +26,8 @@ public class Compte {
         this.solde = s;
     }
 
-    public void credit(float s){
-        float newSolde = this.solde + s;
+    public void credit(double s){
+        float newSolde = (float) (this.solde + s);
         this.setSolde(newSolde);
     }
 

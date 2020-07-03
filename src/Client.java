@@ -34,6 +34,18 @@ public class Client {
     public List<Compte> getComptes(){
         return comptesCli;
     }
+    
+    public List<CompteEpargne> getComptesEpargnes(){
+    	List<CompteEpargne> comptesEpargnes = new ArrayList<CompteEpargne>();
+    	for(Compte compte : this.getComptes()) {
+    		if(compte instanceof CompteEpargne) {
+    			CompteEpargne compteTMP = (CompteEpargne) compte;
+    			comptesEpargnes.add(compteTMP);
+    		}
+    	}    	
+    	return comptesEpargnes;   	
+    }
+    
 
     @Override
     public String toString() {

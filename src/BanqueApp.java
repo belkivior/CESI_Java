@@ -22,8 +22,26 @@ public class BanqueApp {
             // ajouter les 2 comptes au client
             client.addCompte(cCourant);
             client.addCompte(cEpargne);
-            System.out.println(client);           
-            
+            System.out.println(client);
+        }
+        c1.getComptes().get(0).credit((float)500.66);
+        c2.getComptes().get(0).credit((float)1750.2);
+        c2.getComptes().get(1).credit(4598);
+        c3.getComptes().get(0).credit(1800);
+        c4.getComptes().get(0).credit(2025);
+        c4.getComptes().get(1).credit((float)25002.56);
+        
+        System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<TEST CREDIT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+        
+        for (Client client: banque) {
+        	System.out.println(client);
+        }
+        
+        System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<TEST TRANSFERT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+        
+        for (Client client: banque) {
+        	client.getComptesEpargnes().get(0).transfert();
+        	System.out.println(client);
         }
     }
 }

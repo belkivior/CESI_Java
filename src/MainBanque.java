@@ -1,5 +1,5 @@
 public class MainBanque {
-
+/*
     public static void main( String [] argv ) {
         Client martin = new Client(1,"Martin");
         Client dupond = new Client(2,"Dupond");
@@ -8,4 +8,5 @@ public class MainBanque {
         dupond.setNom("Pichon");
         System.out.println(dupond.toString());
     }
+*/
 }

@@ -2,7 +2,7 @@
 public abstract class Compte {
 	private long numero;
 	private Client client;
-	protected float solde;
+	private float solde;
 	
 
 	public Compte(long numero, Client client) {

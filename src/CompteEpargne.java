@@ -1,11 +1,11 @@
 
 public class CompteEpargne extends Compte{
-	private CompteCourant compteTransfet;
+	private CompteCourant compteTransfert;
 	private float montantTransfert;
 
 	public CompteEpargne(long numero, Client client, CompteCourant compteTransfet, float montantTransfert) {
 		super(numero, client);
-		this.compteTransfet = compteTransfet;
+		this.compteTransfert = compteTransfet;
 		this.montantTransfert = montantTransfert;
 	}
 	
@@ -20,11 +20,11 @@ public class CompteEpargne extends Compte{
 	}
 
 	public CompteCourant getCompteTransfet() {
-		return compteTransfet;
+		return compteTransfert;
 	}
 
 	public void setCompteTransfet(CompteCourant compteTransfet) {
-		this.compteTransfet = compteTransfet;
+		this.compteTransfert = compteTransfet;
 	}
 
 	public float getMontantTransfert() {
